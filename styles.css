@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #009688, #e85c0d); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent header */
+    color: white;
+    padding: 15px 30px;
+    position: fixed; /* Fixed header */
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Keep header on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    backdrop-filter: blur(5px); /* Background blur effect */
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+}
+.whatsapp-link {
+    color: white; /* WhatsApp icon and text color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.whatsapp-link:hover {
+    color: #25D366; /* WhatsApp's signature green color on hover */
+    transform: scale(1.1);
+}
+
+.whatsapp-link i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em; /* Adjusted font size */
+    transition: color 0.3s, transform 0.3s; /* Smooth hover transition */
+}
+
+nav a:hover {
+    color: #e85c0d;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; /* Adjust margin for fixed header */
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+}
+
+.left-image {
+    width: 150px; /* Adjust the width of the left image */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+h1 {
+    color: #ffffff; /* Change heading color for better visibility */
+    font-size: 2.5em; /* Adjusted font size for the heading */
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px; /* Spaced letters for elegance */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* More prominent text shadow */
+}
+
+p {
+    line-height: 1.5; /* Adjusted line height for readability */
+    font-size: 1.1em; /* Adjusted font size for better visibility */
+    text-align: center;
+    margin-bottom: 30px; /* Added spacing below the paragraph */
+    color: #ffffff; /* Change paragraph text color for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* More prominent text shadow */
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 40px; /* Padding around the section */
+    max-width: 800px; /* Max width to match main content */
+    margin: 20px auto; /* Centered margin */
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+/* Flexbox layout for About content */
+.about-content {
+    display: flex; /* Flex display */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for About image */
+.about-image {
+    width: 150px; /* Adjust image width */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Paragraph styles for About section */
+.about-text p {
+    color: #333; /* Paragraph text color */
+    line-height: 1.6; /* Line height for readability */
+    font-size: 1em; /* Adjusted font size for better visibility */
+}
+
+/* Services Section Styles */
+.services-section {
+    padding: 40px;
+    text-align: center;
+    background: none; /* No background overlay */
+}
+
+.services-section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.services-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.services-section li {
+    font-size: 1.2em; /* Font size for services */
+    color: #ffffff; /* Service text color */
+    margin: 10px 0; /* Space between services */
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    padding: 40px;
+    text-align: center; /* Center the text */
+    background: none; /* No background overlay */
+}
+
+.testimonials-section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+blockquote {
+    font-style: italic; /* Italic text for quotes */
+    margin: 20px auto; /* Centered blockquotes */
+    padding: 10px; /* Padding for quotes */
+    max-width: 600px; /* Max width for blockquotes */
+    border-left: 4px solid #e85c0d; /* Left border for emphasis */
+}
+
+blockquote p {
+    color: #ffffff; /* Blockquote text color */
+}
+/* Instagram Section Styles */
+.instagram-section {
+    text-align: center;
+    padding: 30px;
+    background: none; /* No background overlay */
+}
+
+.instagram-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.instagram-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between the links */
+}
+
+.instagram-links li {
+    margin: 10px 0;
+}
+
+.instagram-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.instagram-links a:hover {
+    color: #e85c0d;
+}
+
+.instagram-links i {
+    margin-right: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Position footer at the end of the page */
+}
+
+/* GitHub Links in Footer */
+.github-links {
+    list-style: none;
+    padding: 0;
+}
+
+.github-links li {
+    margin: 10px 0;
+}
+
+.github-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.github-links a:hover {
+    color: green;
+}
+
+.github-links i {
+    margin-right: 10px;
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    nav {
+        display: none; /* Hide nav on small screens */
+        flex-direction: column; /* Stack links vertically */
+        background: rgba(0, 0, 0, 0.7); /* Background for mobile nav */
+        position: absolute;
+        top: 60px; /* Below the header */
+        right: 0;
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex; /* Show nav when active */
+    }
+
+    nav a {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .main-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align content */
+    }
+
+    .left-image {
+        margin-bottom: 200px; /* Space below image on small screens */
+    }
